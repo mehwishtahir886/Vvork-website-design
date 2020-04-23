@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*
+{
+	margin:0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+:root
+{
+   --primary: #00EBC5;
+}
+iframe
+{
+	width:100%;
+	height: 100%;
+}
+body
+{
+	background: linear-gradient(30deg,rgba(0,0,0,0.8),transparent,white,white,rgba(0,0,0,0.8));
+	background-repeat: no-repeat;
+	background-size: 100% 150%;
+	overflow: hidden;
+}
+
+.close-1
+{
+	display: none;
+}
+.close-label
+{
+	position: absolute;
+right:2rem;
+top:2rem;
+border:3px solid white;
+border-radius:50%;
+width: 2.5rem;
+height: 2.5rem;
+font-size: 2rem;
+text-decoration: none;
+color: white;
+text-align: center;
+line-height: 2.5rem;
+
+}
+/* .close-label 
+{
+	position: absolute;
+	font-size: 2rem;
+	text-decoration: none;
+	color: white;
+	left:0.6rem;
+	top:-0.2rem;
+
+} */
+
+
+.mcsa
+{
+		grid-area: 9/1/10/2;
+		width: 97%;
+		position: relative;
+		left:1.5%;
+		top:28vh;
+		height: 100%;
+		/*border:1px solid black;*/
+        
+		
+}
+.mcsa h1
+{
+	text-align: center;
+	position: relative;
+	top: -10vh;
+	color: rgba(40,152,133);
+}
+.mcsa .cards
+{
+	width: 100%;
+	height: 60vh;
+	position: relative;
+	left:0%;
+	display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		/*border:1px solid black;*/
+
+}
+.mcsa #card,.mcsa #card2,.mcsa #card3,.mcsa #card4,.mcsa #card5
+{
+	overflow: hidden;
+	text-align: center;
+	width: 11rem;
+	height: 11rem;
+	background:rgba(255,255,255,0.2);
+	box-shadow: 0px 30px 30px -20px rgba(0,0,0,0.1);
+	transition: all 0.5s linear;
+	border:7px solid var(--primary);
+	box-shadow: 0px 0px 1px 7px rgba(40,152,133);
+    border-radius: 50%;
+    position: relative;
+}
+.mcsa .card h3
+{ 
+position: absolute;
+bottom:-50px;
+left:0;
+text-align: center;
+
+}
+
+.mcsa .cards #card3
+{
+	z-index: 15 !important;
+	width: 15rem;
+	height: 15rem;
+	border:7px solid var(--primary);
+	box-shadow: 0px 0px 1px 7px rgba(40,152,133);
+}
+.mcsa .cards #card1:hover #avatar,.mcsa .cards #card2:hover #avatar,.mcsa .cards #card4:hover #avatar,.mcsa .cards #card5:hover #avatar
+{
+    animation: none;
+    box-shadow: 0;
+    width: 80%;
+    height: 80%;
+}
+.card:hover #profile
+{
+	opacity: 1;
+	bottom:20px;
+}
+.card #profile
+{
+	width: 100%;
+	opacity: 0;
+	transition: all 0.5s linear;
+}
+.card #profile h3
+{
+	font-size: 1rem;
+	transition: all 0.5s linear;
+	font-weight: bolder;
+		width: 100%;
+}
+.cards #card #avatar,.cards #card2 #avatar,.cards #card4 #avatar,.cards #card5 #avatar
+{
+	transition: all 0.5s linear;
+	width: 150px;
+	height: 150px;
+	animation:circleAn 5s linear infinite;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+	border-radius:50%;
+
+}
+.cards .card
+{
+	transform: rotate(45deg);
+}
+.cards .card #avatar,.cards .card h3
+{
+	transform: rotate(-45deg);
+}
+.mcsa #card:hover,.mcsa #card2:hover,.mcsa #card3:hover,.mcsa #card4:hover,.mcsa #card5:hover
+{
+	border-radius: 0 !important;
+	z-index: 20;
+}
+
+.mcsa .cards #card:hover #avatar,.mcsa .cards #card2:hover #avatar,.mcsa .cards #card3:hover #avatar,.mcsa .cards #card4:hover #avatar,.mcsa .cards #card5:hover #avatar
+{
+	width: 50%;
+	height: 50%;
+    transform: translateY(-50px);
+    transform: rotate(-45deg);
+    margin:1%;
+    animation:circleAn 5s linear infinite;
+}
+.mcsa .cards #card:hover h3,.mcsa .cards #card2:hover h3,.mcsa .cards #card3:hover h3,.mcsa .cards #card4:hover h3,.mcsa .cards #card5:hover h3
+{
+	width: 100%;
+    bottom:60px;
+	text-align: center;
+	left:15%;
+
+}
+.mcsa .cards #card3 h3
+{
+	font-size: 1.1rem;
+}
+.cards #card3 #avatar
+{
+	transition: all 0.5s linear;
+	width: 180px;
+	height: 180px;
+	animation:circleAn 5s linear infinite;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+	border-radius:50%;
+
+}
+.cards #card #avatar
+{
+	background-image: url('images/mcsa-1.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+.cards #card2 #avatar
+{
+	background-image: url('images/mcsa-2.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+.cards #card3 #avatar
+{
+	background-image: url('images/mcsa-3.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+.cards #card4 #avatar
+{
+	background-image: url('images/mcsa-4.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+.cards #card5 #avatar
+{
+	background-image: url('images/mcsa-5.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+@keyframes circleAn
+{
+	0%{
+		box-shadow: 0px 30px 30px -25px
+		rgba(0,0,0,0.6),
+		0px 0px 0px 0px rgba(40,152,133,0.7),
+	   0px 0px 0px 0px rgba(40,152,133,0.6),
+	   0px 0px 0px 0px rgba(40,152,133,0.5);
+	}
+	   100%
+	   {
+	   	box-shadow: 0px 30px 30px -25px
+		rgba(0,0,0,0.6),
+		0px 0px 0px 70px rgba(40,152,133,0),
+	   0px 0px 0px 200px rgba(40,152,133,0),
+	   0px 0px 0px 300px rgba(40,152,133,0);
+	   }
+}

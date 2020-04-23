@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*
+{
+	margin:0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+:root
+{
+   --primary: #00EBC5;
+}
+.wrapper3
+{
+	height: 520vh;
+    display: grid;
+    grid-template-rows: 8vh 16vh 140vh 60vh 105vh 0vh 105vh;
+	overflow: hidden;
+}
+.pre-nav
+{
+	grid-area: 1/1/2/2;
+}
+.vvork-seminar
+{
+	width: 100%;
+	height: 100%;
+	border:1px solid black;
+	grid-area: 3/1/4/2;
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0.6) 80vh,rgba(40,152,133,0.8) 20vh),url(images/tabs9.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+    position: relative;
+    top:-0.9vh;
+    text-align: center;
+    color: white;
+    padding-top:15vh;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 60vh 40vh;
+}
+.vvork-seminar .intro
+{
+	grid-area: 1/1/2/2;
+   /*border:1px solid white;*/
+}
+.vvork-seminar .intro h1
+{
+	font-size:3.2rem;
+	font-weight: bolder;
+}
+.vvork-seminar .intro h2
+{
+	line-height: 6vh;
+	margin-top: 6vh;
+	width: 80%;
+	position: relative;
+	left:10%;
+}
+.vvork-seminar .intro h3
+{
+	margin-top: 6vh;
+	font-size: 2rem;
+}
+.vvork-seminar .about
+{
+	grid-area: 2/1/3/2;
+	/*border:1px solid white;*/
+}
+.info
+{
+	width: 100%;
+	height: 100%;
+	/*border:1px solid black;*/
+	grid-area: 4/1/5/2;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    text-align: center;
+}
+.info-box
+{
+	width: 18%;
+	height: 55vh;
+    width: 19%;
+	padding-top: 20vh;
+	box-sizing: border-box;
+	transition: all 1s linear;
+	border:none !important;
+	margin-top: -7px;
+}
+#info-box1
+{
+	background:linear-gradient(rgba(0,0,0,0.6),rgba(40,152,133,0.5),var(--primary));
+	height: 55vh;
+	width: 20%;
+	padding-top: 20vh;
+	box-sizing: border-box;
+    box-shadow: 2px 2px 2px 4px black;
+	transition: all 1s linear;
+}
+#info-box1 pre
+{
+	line-height: 3.5vh;
+}
+#info-box5
+{
+	position: relative;
+	left:-20px;
+}
+.info-box:hover
+{
+	background:linear-gradient(rgba(0,0,0,0.6),rgba(40,152,133,0.5),var(--primary));
+	transition: all 1s linear;
+	border-radius:10%;
+
+}
+.info-box h1
+{
+	margin-bottom: 10px;
+}
+.wrap1
+{
+	grid-area: 5/1/6/2 !important;
+	height: 100%;
+}
+.wrap1 #wrap h1
+{
+	margin-top: 0vh;
+	font-size: 3.2rem;
+	width: 100%;
+}
+#form-wrap
+{
+	position: relative;
+	margin-top:-8vh;
+}
+#students-feedback
+{
+   grid-area: 6/1/7/2;
+   height: 100%;
+}
+footer
+{
+	grid-area: 7/1/8/2 !important;
+    position: relative;
+    top:-40vh;
+    height: 105vh;
+
+}

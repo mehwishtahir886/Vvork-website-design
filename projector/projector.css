@@ -1,0 +1,309 @@
+body{
+    height:100vh;
+    width:100%;
+    color:black;
+    font-size:1.2rem;
+    line-height:2.2rem;
+    display:grid;
+    justify-items:center;
+    font-family:'Popins',sans-serif;
+}
+h2{
+    color:rgb(40, 152, 133);
+    font-size:2.5rem;
+}
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen{
+    display:none;
+}
+.label{
+    cursor: pointer;
+    background:transparent;
+    position:absolute;
+    font-size:1.1rem;
+    color:rgb(40, 152, 133);
+}
+.label1, .label3, .label5, .label7, .label9, .label11, .label13, .label15{
+    bottom:5vh;
+    padding:3px 5px;
+    box-shadow:3px 3px 4px 3px rgb(40, 152, 133);
+}
+.label1{
+    left:9%;
+}
+.label3{
+    left:21%; 
+}
+.label5{
+    left:27%; 
+}
+.label7{
+    left:38%; 
+}
+.label9{
+    left:45.4%; 
+}
+.label11{
+    left:57%; 
+}
+.label13{
+    left:64.5%; 
+}
+.label15{
+    left:80%; 
+}
+.label2, .label4, .label6, .label8, .label10, .label12, .label14, .label16{
+    bottom:-4.7vh;
+    height:6.8vh;
+}
+.label2{
+    width:14%;
+    left:-1.5%;
+}
+.label4{
+    width:7%;
+    left:13%;
+}
+.label6{
+    width:13%;
+    left:20.5%;
+}
+.label8{
+    width:8.5%;
+    left:34%;
+}
+.label10{
+    width:13.8%;
+    left:43%;
+}
+.label12{
+    width:9%;
+    left:57%;
+}
+.label14{
+    width:18.8%;
+    left:66.3%;
+}
+.label16{
+    width:14.8%;
+    left:85%;
+}
+
+.screen1, .screen3, .screen5, .screen7,.screen9, .screen11, .screen13, .screen15{ 
+    position:absolute;
+    left:10%;     
+    height:54vh;
+    width:80%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    visibility:hidden;
+}
+.image{
+    position:relative;
+}
+.image img{
+    position:absolute;
+    height:100%;
+    width:100%;
+}
+.text{
+    height:53vh;
+    position:absolute;
+    padding:14 14px;
+    box-sizing:border-box;
+    background:white;
+    left:50%;
+}
+.projector{
+    background:white;
+    position:relative;
+    top:53vh;
+    height:34vh;
+    width:82%; 
+}
+.items{
+    position:relative;
+    height:50vh;
+    width:100%;
+    background:white;
+    bottom:-20vh;
+    z-index:-1;
+}
+.shadow{
+    position:absolute;
+    height:100%;
+    width:100%;
+    visibility:hidden;
+    background: linear-gradient(to bottom, rgba(0,235,197,0.2),rgba(40, 152, 133, 0.2),rgba(0, 0, 0, 0.2));
+    clip-path: polygon(0 0, 38% 100%, 100% 0);
+}
+
+     /* animation projector*/
+.one:checked + .label1 + .screen1{
+    animation:up 2s 1 forwards;
+}
+.three:checked + .label3 + .screen3{
+    animation:up 2s 1 forwards;
+}
+.five:checked + .label5 + .screen5{
+    animation:up 2s 1 forwards;
+}
+.seven:checked + .label7 + .screen7{
+    animation:up 2s 1 forwards;
+}
+.nine:checked + .label9 + .screen9{
+    animation:up 2s 1 forwards;
+}
+.eleven:checked + .label11 + .screen11{
+    animation:up 2s 1 forwards;
+}
+.thirteen:checked + .label13 + .screen13{
+    animation:up 2s 1 forwards;
+}
+.fifteen:checked + .label15 + .screen15{
+    animation:up 2s 1 forwards;
+}
+@keyframes up{
+    0%{
+     top:50vh;z-index:-1;
+    }
+    100%{
+    top:0;visibility:visible;z-index:-1;
+    }
+}
+      /* animation projector end */
+      .two:checked + .label2 + .shadow2{
+    animation:opacity2 1s 1 linear forwards;
+}
+@keyframes opacity2{
+from{
+    visibility:visible;
+     clip-path: polygon(0 100%, 6% 100%, 100% 100%);
+    }
+ to{
+    visibility:visible;
+     clip-path: polygon(0 0, 6% 100%, 100% 0);
+ }   
+}
+.two:checked + .label2{
+    visibility: hidden;
+}
+   /* an1 end */
+.four:checked + .label4 + .shadow4{
+    animation:opacity44 1s 1 linear forwards;
+}
+@keyframes opacity44{
+    from{
+        visibility:visible;
+         clip-path: polygon(0 100%, 17% 100%, 100% 100%);
+        }
+     to{
+        visibility:visible;
+         clip-path: polygon(0 0, 17% 100%, 100% 0);
+     }   
+    }
+.four:checked + .label4{
+    visibility: hidden;
+}
+     /* an2 end */
+.six:checked + .label6 + .shadow6{
+        animation:opacity6 1s 1 linear forwards;
+    }
+@keyframes opacity6{
+    from{
+        visibility:visible;
+         clip-path: polygon(0 100%, 27% 100%, 100% 100%);
+        }
+     to{
+        visibility:visible;
+         clip-path: polygon(0 0, 27% 100%, 100% 0);
+     }   
+    }
+.six:checked + .label6{
+        visibility: hidden;
+    }
+    /* an3 end */
+.eight:checked + .label8 + .shadow8{
+        animation:opacity8 1s 1 linear forwards;
+    }
+@keyframes opacity8{
+    from{
+        visibility:visible;
+         clip-path: polygon(0 100%, 38% 100%, 100% 100%);
+        }
+     to{
+        visibility:visible;
+         clip-path: polygon(0 0, 38% 100%, 100% 0);
+     }   
+    }
+.eight:checked + .label8{
+        visibility: hidden;
+    }
+        /* an4 end */
+    .ten:checked + .label10 + .shadow10{
+            animation:opacity10 1s 1 linear forwards;
+        }
+    @keyframes opacity10{
+        from{
+            visibility:visible;
+             clip-path: polygon(0 100%, 50% 100%, 100% 100%);
+            }
+         to{
+            visibility:visible;
+             clip-path: polygon(0 0, 50% 100%, 100% 0);
+         }   
+        }
+    .ten:checked + .label10{
+            visibility: hidden;
+        }
+        /* an5 end */
+        .twelve:checked + .label12 + .shadow12{
+            animation:opacity4 1s 1 linear forwards;
+        }
+    @keyframes opacity4{
+        from{
+            visibility:visible;
+             clip-path: polygon(0 100%, 62% 100%, 100% 100%);
+            }
+         to{
+            visibility:visible;
+             clip-path: polygon(0 0, 62% 100%, 100% 0);
+         }   
+        }
+        .twelve:checked + .label12{
+            visibility: hidden;
+        }        
+        /* an6 end */
+        .fourteen:checked + .label14 + .shadow14{
+            animation:opacity14 1s 1 linear forwards;
+        }
+    @keyframes opacity14{
+        from{
+            visibility:visible;
+             clip-path: polygon(0 100%, 76% 100%, 100% 100%);
+            }
+         to{
+            visibility:visible;
+             clip-path: polygon(0 0, 76% 100%, 100% 0);
+         }   
+        }
+        .fourteen:checked + .label14{
+            visibility: hidden;
+        }   
+                /* an7 end */
+                .sixteen:checked + .label16 + .shadow16{
+                    animation:opacity16 1s 1 linear forwards;
+                }
+            @keyframes opacity16{
+                from{
+                    visibility:visible;
+                     clip-path: polygon(0 100%, 92% 100%, 100% 100%);
+                    }
+                 to{
+                    visibility:visible;
+                     clip-path: polygon(0 0, 92% 100%, 100% 0);
+                 }   
+                }
+            .sixteen:checked + .label16{
+                    visibility: hidden;
+                }   
+ /* an8 end */

@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*
+{
+	margin:0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+:root
+{
+   --primary: #00EBC5;
+}
+a
+{
+	position:relative;
+	left:2rem;
+	top:2rem;
+	padding:0% 0.2%;
+	text-decoration: none;
+	color: rgba(40,152,133);
+	font-size: 2rem;
+}
+.main
+{
+	width: 100vw;
+	height: 60vh;
+	position: relative;
+}
+
+.form
+{
+	width:380px;
+	height: 380px;
+	/*border:1px solid grey;*/
+	position: absolute;
+	top:0;
+	border-radius: 50%;
+	z-index: -1;
+	transition: all 0.2s ease;
+
+}
+.form img
+{
+	margin-left: 42%;
+	margin-top: 20px;
+}
+.form input:nth-child(1),.form input:nth-child(2)
+{
+	margin-top: 20px;
+	margin-left: 100px;
+	width: 63%;
+	height: 8vh;
+	padding-left: 20px;
+	box-sizing: border-box;
+	font-size: 1.1rem;
+	border:none;
+	outline:none;
+	border-bottom: 2px solid var(--primary);
+	background:transparent;
+	color: grey;
+
+}
+
+.form input:nth-child(3),.form input:nth-child(4)
+{
+	width:100px;
+	background-color: rgb(40,152,133);
+	color: white;
+	height: 40px;
+	margin-top: 40px;
+	margin-left: 110px;
+	border:none;
+	transition: all 0.5s linear;
+
+}
+.form input:nth-child(4)
+{
+	margin-left: 5px;
+}
+::placeholder
+{
+	color: lightgrey;
+	font-size: 1rem;
+
+
+}
+.form input:nth-child(3):hover
+{
+    margin-top: 45px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form input:nth-child(4):hover
+{
+ margin-top: 45px;
+    font-weight: bold;
+    cursor: pointer;	
+}
+.form input:nth-child(1):focus,.form input:nth-child(2):focus
+{
+	box-shadow: -2px 2px 2px 3px rgb(40,152,133);
+	border:none;
+}
+.cover
+{
+	position: relative;
+	top:20vh;
+	left: 35%;
+	width: 400px;
+	height: 400px;
+	background: rgb(40, 152, 133);
+	border-radius: 50%;
+	transition: all 0.2s ease;
+	box-shadow: -1px 1px 3px 2px lightgrey;
+
+}
+
+.cover h1
+{
+	position: absolute;
+	top: 37%;
+	left:20%;
+	color: white;
+	font-size: 80px;
+	font-family: 'Cookie', cursive;
+	transition: all 0.2s ease;
+
+}
+.cover:hover
+{
+    background:linear-gradient(to right,var(--primary) 45%,white 100%);
+    border:1px solid lightgrey;
+    width: 5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 50%;
+   border-bottom-left-radius: 50%; 
+
+}
+.cover:hover .form
+{
+	z-index: 2;
+}
+.cover:hover h1
+{
+	transform: rotateZ(-90deg);
+	font-size: 45px;
+	color: rgb(40, 152, 133);
+	margin-top: 30px;
+	margin-left: -30px;
+
+}
